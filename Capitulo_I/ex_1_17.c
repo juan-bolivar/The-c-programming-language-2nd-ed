@@ -16,13 +16,9 @@ main(){
 
   max=0;
   while (( len = getline(line)) != -1)
-    if (len > max){
-      max = len;
-      copy(longest, line);
-
+    if (len > 80){
+    printf("%s \n" , line);
     }
-  if( max > 0 )
-    printf("%s \n" , longest);
 
   return 0;
 
